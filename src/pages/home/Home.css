@@ -1,0 +1,35 @@
+.transition {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 36, 66, 1),
+    rgba(250, 250, 250, 0.2)
+  );
+  height: 200px;
+  z-index: -1;
+  margin-bottom: -150px;
+}
+.cards-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: inherit;
+}
+.hero {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.hero img {
+  width: 100%;
+}
+.hero h1 {
+  font-family: pacifico;
+  font-weight: 400;
+  font-size: 4vw;
+  color: white;
+  position: absolute;
+  top: 8px;
+  left: 50px;
+}

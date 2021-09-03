@@ -1,0 +1,134 @@
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.modal-container {
+  width: 500px;
+  margin: 0px auto;
+  padding: 15px 30px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+  transform: scale(0.85);
+}
+.close-modal-btn {
+  font-size: 22px;
+  font-weight: 600;
+  background-color: transparent;
+  float: right;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 24px;
+}
+.close-modal-btn:hover {
+  background-color: #002442;
+  color: white;
+}
+.modal-content h3 {
+  margin-top: 1em;
+  color: #001325;
+  text-align: center;
+}
+.modal-content form {
+  width: 100%;
+}
+.modal-content form input {
+  background-color: #edf2f5;
+}
+textarea {
+  color: #636970;
+  border: 1px #edf2f5 solid;
+  resize: none;
+  background-color: #edf2f5;
+  font-size: 16px;
+  font-weight: 600;
+  max-height: 80px;
+}
+.input-container {
+  padding: 15px;
+  border-bottom: none;
+  position: relative;
+  background: #edf2f5;
+  border-bottom: 1px solid #e6edf1;
+  margin: 0.7em 0;
+  border-radius: 0.25rem;
+}
+.label-file {
+  width: 100%;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #636970;
+}
+.label-file:hover {
+  color: #002442;
+}
+.input-image {
+  display: none;
+}
+.modal-preview-image {
+  width: 200px;
+  max-height: 300px;
+  border-radius: 0.25rem;
+}
+#imageInput {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-btn-wrapper {
+  margin: 1.2em;
+  display: flex;
+  justify-content: space-around;
+}
+.modal-form-btn {
+  width: 100px;
+  padding: 0.5em;
+  color: white;
+  border-radius: 0.25rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+#modal-submit-btn {
+  background-color: #002442;
+}
+#modal-submit-btn:hover {
+  background-color: #001325;
+}
+#modal-discard-btn {
+  background-color: #001325;
+}
+#modal-discard-btn:hover {
+  background-color: #002442;
+}
+.modal-enter {
+  opacity: 0;
+}
+.modal-leave-active {
+  opacity: 0;
+}
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+@media (max-width: 500px) {
+  .modal-container {
+    width: 100%;
+  }
+}
